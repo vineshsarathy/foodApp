@@ -1,0 +1,136 @@
+
+@import '../../styles/globals.scss';
+
+
+.layoutCountainer{
+    background-color: $secondaryColor;
+    .partionLayout{
+        margin-top: 10px;
+        padding: 10px 20px;
+        display: flex;
+        .childrenSection{
+            flex: 75%;
+        }
+        .cartSection{
+            flex: 25%;
+            padding:10px;
+        }
+    }
+
+}
+.navbarContainer{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    padding: 2%;
+    box-shadow:0 4px 6px -6px #222;
+    justify-content: space-between;
+    .logo{
+        color: black;
+        &:hover{
+            color: #c1c1c1;
+        }
+    }
+    .items{
+        display: flex;
+        gap: 50px;
+        a{
+            text-decoration: none;
+        }
+        .menuItem{
+           
+            color: black;
+            &:hover{
+                color: $hoverIcon;
+            }
+        }
+        .active{
+            border-bottom: 1px solid $hoverIcon;
+        }
+      
+        .cart{
+            position: relative;
+            cursor: pointer;
+
+            small{
+                color: $cartColour;
+                position: absolute;
+                right: -8px;
+                top: -9px;
+                font-size: 15px;
+                
+            }
+            .cartSVg{
+                font-size: 24px;
+                color: $cartColour;
+                &:hover{
+                    color: $hoverIcon;
+                }
+            }
+        }
+    }
+}
+.sideCartContainer {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding-bottom: 5px;
+    .foodName {
+        min-width: 120px;
+        margin: 0;
+    }
+.foodPrice {
+        margin-left: 5px;
+        margin-bottom: 0;
+    }
+    .formButtons{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+height: 30px;
+width: 83px;
+border: $border;
+color: $cardSecondary;
+font-size: .9rem;
+font-weight: 600;
+line-height: 30px;
+background-color: #fff;
+.minus{
+    font-size: 20px;
+    font-weight: 700;
+    color: #d4d5d9;
+    cursor: pointer;
+    &:hover{
+        color: $hoverIcon;
+    }
+}
+.plus{
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    &:hover{
+       color: $hoverIcon;
+    }
+}
+    }
+}
+.checkout {
+    background: white;
+    padding: 5px 23px;
+    border: 1px solid $cartColour;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #222;
+    &:hover{
+        background: $cartColour;
+        color: #222;
+    }
+    &:active {
+        background: #e5e5e5;
+        -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+           -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+                box-shadow: inset 0px 0px 5px #c1c1c1;
+         outline: none;
+      }
+}

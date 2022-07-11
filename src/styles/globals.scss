@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;0,700;1,400;1,500&display=swap');
+@import '~antd/dist/antd.css';
+
+$primaryColor:rgba(255, 255, 0, 0.966);
+$secondaryColor:white;
+$fontFamily:'Montserrat', sans-serif;
+$hoverIcon:#e05d26;
+$button:#ff4d4f;
+$cartColour:#60b246;
+$cardSecondary:#60b246;
+$border:1px solid #d4d5d9;
+$backGround: #d4d5d9;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $fontFamily;
+    &::-webkit-scrollbar {
+        width: 10px;              
+      }
+      
+      &::-webkit-scrollbar-track {
+        background: $backGround;       
+      }
+      
+      &::-webkit-scrollbar-thumb {
+        background-color: $cartColour;    
+        border-radius: 10px;      
+      }
+}

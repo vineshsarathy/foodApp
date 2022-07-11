@@ -1,0 +1,171 @@
+@import'../../styles/globals.scss';
+
+.cardContainer{
+    .recipe,
+.Image-box {
+    width: 280px;
+	align-items: center;
+}
+
+.Image-box {
+	overflow: hidden;
+    height: 180px;
+	img {
+		max-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		object-fit: cover;
+		object-position: 50% 50%;
+	}
+}
+
+.recipe {
+	border: 2px solid #F2F2F2;
+	border-radius: 8px;
+	overflow: hidden;
+	
+	.content {
+        padding: 16px 18px;
+        flex: 2 1 25ch;
+        .desc {
+            height: 60px;
+        }
+	}
+}
+        .button {
+            display: block;
+            width: max-content;
+            padding: 6px 25px;
+            background-color: rgb(250, 74, 12);
+            color: white;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            cursor: pointer;
+            &:hover{
+                background-color: $cartColour
+            }
+        }
+        .available {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 5px;
+            margin-bottom: 5px;
+            .box {
+                font-size: 11px;
+                padding: 5px;
+                border: $border;
+                color: $cardSecondary;
+            }
+        }
+        .cartsFunc {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .formButtons{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+    height: 30px;
+    width: 83px;
+    border: $border;
+    color: $cardSecondary;
+    font-size: .9rem;
+    font-weight: 600;
+    line-height: 30px;
+    background-color: #fff;
+    .minus{
+        font-size: 20px;
+        font-weight: 700;
+        color: #d4d5d9;
+        cursor: pointer;
+        &:hover{
+            color: $hoverIcon;
+        }
+    }
+    .plus{
+        font-size: 20px;
+        font-weight: 700;
+        cursor: pointer;
+        &:hover{
+           color: $hoverIcon;
+        }
+    }
+        }
+}
+img.vegorNv {
+    width: 15px;
+}
+.orderContainer {
+    margin: 10px 0px;
+    border: 1px solid $cartColour;
+    width: 400px;
+    border-radius: 5px;
+    .headerCard {
+        display: flex;
+        gap: 50px;
+        background: #c9c8c6;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        padding: 7px 12px;
+    }
+    .bodyCard{
+        .deliver{
+            margin: 10px 5px;
+        }
+        .orderCard {
+            display: flex;
+            align-items: center;
+        }
+
+            img {
+                width: 150px;
+                height: 100px;
+                object-fit: contain;
+            }
+
+    }
+}
+
+
+
+.cardContainer2{
+.Image-box {
+    width: 280px;
+	align-items: center;
+	overflow: hidden;
+    height: 180px;
+	img {
+		max-width: 100%;
+		min-height: 100%;
+		width: auto;
+		height: auto;
+		object-fit: cover;
+		object-position: 50% 50%;
+	}
+}
+
+.recipe2 {
+    display: flex;
+    flex-direction: row;
+    height: 180px;
+    width: 400px;
+	align-items: center;
+	border: 2px solid #F2F2F2;
+	border-radius: 8px;
+	overflow: hidden;
+	
+	.content2 {
+        padding: 16px 18px;
+        flex: 0 1 40ch;
+        .desc {
+            height: 60px;
+        }
+        .contentSpan{
+            color: $button;
+        }
+	}
+}
+
+}
