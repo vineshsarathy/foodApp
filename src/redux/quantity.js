@@ -15,7 +15,6 @@ export const qty = createSlice({
         return { ...state, orders: action.payload };
     },
     totalAmount:(state, action)=>{
-      // console.log(action.payload)
       return { ...state, amount: action.payload }
     }
   },
